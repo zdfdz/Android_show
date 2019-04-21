@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <study.zdf.tour.Utils.NoTouchViewPager
+        android:id="@+id/vp_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></study.zdf.tour.Utils.NoTouchViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_bottomTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e1f5f5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_tour"
+            style="@style/Content_Bottom_tab"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_affiliations_use"
+            android:text="景点评分"
+            android:textColor="@color/txt_content_tab" />
+
+        <RadioButton
+            android:id="@+id/rbtn_lib"
+            style="@style/Content_Bottom_tab"
+            android:drawableTop="@drawable/icon_circle_line"
+            android:text="图书馆"
+            android:textColor="@color/txt_content_tab" />
+
+
+    </RadioGroup>
+</LinearLayout>
